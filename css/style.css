@@ -492,7 +492,8 @@ header .left_head {
   font-weight: bolder;
   color: #2d3a20;
 }
-.footer{
+
+.footer {
   width: 100%;
   display: flex;
   align-items: center;
@@ -501,24 +502,28 @@ header .left_head {
   background-color: #101010;
   color: #fff;
 }
-.footer p{
+
+.footer p {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1.4rem;
   font-weight: 200;
   opacity: 0.7;
 }
-.footer .footer_icons{
+
+.footer .footer_icons {
   font-size: 1.5rem;
   display: flex;
   gap: 1.5rem;
   opacity: 0.7;
   cursor: pointer;
 }
-.footer .footer_icons i{
+
+.footer .footer_icons i {
   font-size: 1.5rem;
-  transition: 0.2s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
-.footer .footer_icons i:hover{
+
+.footer .footer_icons i:hover {
   scale: 1.2;
   color: #00ff6e;
 }
@@ -754,6 +759,13 @@ header .left_head {
 
 }
 
+@media (max-width:400px) {
+  .footer{
+    flex-direction: column;
+    gap: 1rem;
+  }
+}
+
 @media (max-width:370px) {
   .intro .right_intro:after {
     display: var(--triangle_display);
@@ -790,10 +802,12 @@ header .left_head {
     margin-bottom: 5rem;
     line-height: 2.2;
   }
-  .triangle_bg .create_btn{
+
+  .triangle_bg .create_btn {
     font-size: 1.3rem;
   }
-  .triangle_bg h1{
+
+  .triangle_bg h1 {
     font-size: 2.5rem;
     line-height: 3.2rem;
   }
